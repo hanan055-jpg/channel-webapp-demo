@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Icons with Hover Effect</title>
+  
+  <!-- 1. Load Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Container styling */
+    .icon-bar {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Base Icon Styles */
+    .icon-item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #1a1a1a; /* Default icon color */
+      transition: transform 0.25s ease, color 0.25s ease; /* Smooth hover transition */
+    }
+
+    .icon-item i {
+      width: 26px;
+      height: 26px;
+      stroke-width: 1.8;
+    }
+
+    /* Interactive Hover Effect */
+    .icon-item:hover {
+      color: #2563eb; /* Changes color to vibrant blue on hover */
+      transform: translateY(-3px) scale(1.12); /* Slightly lifts and enlarges */
+    }
+
+    /* Optional: Click effect */
+    .icon-item:active {
+      transform: translateY(0) scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 2. Icon Markup -->
+  <div class="icon-bar">
+    <a class="icon-item" aria-label="Search">
+      <i data-lucide="search"></i>
+    </a>
+    <a class="icon-item" aria-label="Account">
+      <i data-lucide="user"></i>
+    </a>
+    <a class="icon-item" aria-label="Wishlist">
+      <i data-lucide="star"></i>
+    </a>
+    <a class="icon-item" aria-label="Shopping Bag">
+      <i data-lucide="shopping-bag"></i>
+    </a>
+  </div>
+
+  <!-- 3. Initialize Script -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

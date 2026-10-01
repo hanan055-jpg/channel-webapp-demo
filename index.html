@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chanel Demo</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Body top padding added so header doesn't overlap content */
+    body {
+      padding-top: 70px;
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* Fixed Navbar Styling */
+    .custom-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: #ffffff;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 25px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Logo Center Positioning */
+    .brand-logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .brand-logo:hover {
+      color: #000000;
+    }
+
+    /* Icon Styles */
+    .icon-link {
+      color: #000000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: opacity 0.2s ease;
+    }
+
+    .icon-link:hover {
+      opacity: 0.6;
+      color: #000000;
+    }
+
+    .icon-link i {
+      width: 22px;
+      height: 22px;
+      stroke-width: 1.5;
+    }
+
+    /* Main Hero Banner (d1) */
+    .hero-section {
+      background-image: url('1786953256299-homepage-corpo-one-1.avif'); /* Add your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: calc(100vh - 70px);
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #f8f3f3;
+      position: relative;
+    }
+
+    /* Text Overlay */
+    .hero-content {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero-category {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0px;
+      letter-spacing: 3px;
+      margin-top: 0px;
+    }
+
+    .hero-title {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0px;
+      letter-spacing: 3px;
+      margin-top: 0px;
+    }
+
+    .hero-btn {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      padding: 12px 35px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      width: 160px;
+      
+    }
+
+    .hero-btn:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    /* Second Section (d2) */
+    .second-section {
+      width: 100%;
+      height: 400px;
+      background-image: url('watch.avif'); /* Add your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body >
+
+  <!-- Fixed Header / Navbar -->
+  <header class="custom-navbar" style="width: 100%; ">
+    <!-- Left Side: Menu Toggle & Search Icons -->
+    <div class="nav-left">
+      <a href="#" class="icon-link" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </a>
+     
+    </div>
+
+    <!-- Center: Brand Logo -->
+    <a href="#" class="brand-logo">CHANEL</a>
+
+    <!-- Right Side: Account & Bag Icons -->
+    <div class="nav-right">
+         <a href="#" class="icon-link" aria-label="Search">
+        <i data-lucide="search"></i>
+      </a>
+      <a href="#" class="icon-link" aria-label="Account">
+        <i data-lucide="user"></i>
+      </a>
+      <a href="#" class="icon-link" aria-label="Shopping Bag">
+        <i data-lucide="shopping-bag"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <div class="hero-category">FASHION</div>
+      <h1 class="hero-title">FALL WINTER 2026<br>COLLECTIONS</h1>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+   <!-- Hero Section -->
+  <div class="hero-section" style="background-image: url(watch.avif); ">
+    <div class="hero-content">
+      <div class="hero-category">WATCHES</div>
+      <div class="hero-title">LA MONTRE PREMIÈRE ÉDITION <br>ORIGINALE</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1784293608452-push-hpcorpo-02.webp); ">
+    <div class="hero-content">
+      <div class="hero-category">SKIN CARE</div>
+      <div class="hero-title">LE LIFT</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1785759949563-push-hpcorpo-egery-p1.avif);">
+    <div class="hero-content">
+      <div class="hero-category">FRAGRANCE</div>
+      <div class="hero-title">COCO MADEMOISELLE CRUSH <br> ABSOLU</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1765190208191-one-hpcorpo-hero-d-5760x2520px-2_2520x5760.avif);">
+    <div class="hero-content">
+      <div class="hero-category">FINE JEWELLERY</div>
+      <div class="hero-title">COCO CRUSH</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1786018885075-hp-corpo-desktop-makeup.avif);">
+    <div class="hero-content">
+      <div class="hero-category">MAKEUP</div>
+      <div class="hero-title">COCO MADEMOISELLE MAKEUP <br> COLLECTION</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1783451693422-homepage-corpo-one-26khc-desktop-2.avif);">
+    <div class="hero-content">
+      <div class="hero-category">HAUTECOUTURE</div>
+      <div class="hero-title">FALL WINTER 2026 <br> SHOW</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1779111499091-banner-desktop-ew-en-2_946x2416.webp);">
+    <div class="hero-content">
+      <div class="hero-category">EYEWEAR</div>
+      <div class="hero-title">METIERS D'ART 2026 COLLECTION</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1778071236526-signatures-hpcorpo-d-5760x2520-n5_2520x5760.avif);">
+    <div class="hero-content">
+      <div class="hero-category">HIGH JEWELLERY</div>
+      <div class="hero-title">COLLECTION N°5</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="hero-section" style="background-image: url(1684509459447-9154910617630chanelstaticcoverdesktop300dippng_5251x12001.webp);">
+    <div class="hero-content">
+      <div class="hero-category">PODCAST</div>
+      <div class="hero-title">CHANEL CONNECTS</div>
+      <button class="hero-btn">SEE MORE</button>
+    </div>
+  </div>
+  <div class="row" style=" padding: 40px; padding-top: 60px; margin-bottom: 0px; height: 250px; background-color: white;">
+    <div class="col" style="color: rgb(110, 99, 99);"><h6 style="color: #000000;"><b>CONTACT AN ADVISOR</b></h6>
+      <span>Please contact CHANEL Client Care Department on <br> Monday-Sunday, 10 a.m.-8 p.m. (except National <br> Holidays) via email at <u style="color: #000000;">clientcare.india@chanel.com <br></u>orby calling <u style="color: #000000;">0008000504445</u> </span>
+    
+    </div>
+    <div class="col" style="color: rgb(110, 99, 99);"><h6 style="color: #000000;">FIND STORE</h6> Enter a location to find the closest CHANEL stores</div>
+    <div class="col" style="color: rgb(110, 99, 99);"><h6 style="color: #000000;">NEWSLETTER</h6> Subscribe to recieve the latest news from CHANEL <br> <u style="color: #000000;">Subscribe</u></div>
+
+  </div>
+  
+  <div style="height: 500px; "></div>
+  <div class="fixed-bottom" style="height: auto; z-index: -1;  ">
+    <div style="background-color:black; text-align: left; padding: 50px;  "> 
+    <h3 style="color: white; text-align: center; margin-top: 100px;"><b>CHANEL</b></h3> <br><br>
+    <div class="row">
+      
+      <div class="col" style="color: rgb(110, 99, 99); ">
+        <h6 style="color: white;">EXPLORE CHANEL.COM</h6>
+        Haute Couture <br>
+        Fashion  <br> High Jewellery <br> Fine Jewellery <br>Watches <br> Eyewear <br> Fragrance <br> Makeup <br> Skincare <br> Sitemap <br> 
+
+      </div>
+      <div class="col" style="color: rgb(110, 99, 99);">
+        <h6 style="color: white;">ONLINE SERVICES</h6>
+        Payment Methods <br> My Account <br> Shipping Options <br> Returns <br> Care & Services <br>FAQ
+
+      </div>
+      <div class="col" style="color: rgb(110, 99, 99);">
+        <H6 style="color: white;">BOUTIQUE SERVICES</H6>
+        Find a Boutique <br>Book an appoinment
+
+      </div>
+      <div class="col" style="color: rgb(110, 99, 99);">
+        <h6 style="color: white;">THE HOUSE OF CHANEL</h6>
+        Careers <br>Legal Statement <br>Privacy Policy <br>Report to Society <br>Fighting Counterfeits <br>Substainability-Linked Bond Updates <br>Responsible Jewellery Statement
+
+      </div> 
+      
+
+    </div>
+    <hr style="color: white;">
+    <SPAN style="color: rgb(110, 99, 99) ; font-size: smaller;">Change location and language</SPAN>
+    <br><br><br> <span style="color: rgb(110, 99, 99); font-size: smaller;">CHANEL(INDIA)PRIVATE LIMITED, 5th Floor,Unit No 505 & 506, World-Mark 3, Hospitality District,IGIA,New Delhi, 110037 , INDIA</span>
+    
+    
+
+
+    </div>
+
+  </div>
+  
+
+
+
+  <!-- Lucide Icons Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
